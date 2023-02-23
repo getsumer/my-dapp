@@ -4,17 +4,16 @@ import './index.css';
 import App from './App';
 
 import { Web3ReactProvider } from "@web3-react/core";
-import { SumerObserver, Client } from "sumer-sdk";
+import { Sumer } from "sumer-sdk";
 
 // this is a temporary key, once sumer is realized you will be able
 // to create your own key for your dapp
-const key = '04a23d9f-1c7a-414e-b400-847658ef5cd6'
+const dappKey = '019ac0ff-6638-4d3d-9c69-908cb7d834b7'
 
 //configure web3-react
 const getLibrary = (provider) => {
-  const client = new Client(provider, key)
-  const library = new SumerObserver(client, key);
-  return library;
+    const library = Sumer.init({ provider, dappKey })
+    return library
 };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
