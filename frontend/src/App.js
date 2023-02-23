@@ -50,7 +50,6 @@ function App() {
   // send tokens
   async function sendTokens(to, amount) {
     // to create a contract instance we need: contract addr, contract abi and the signer.
-    // to use sumer, we also need the sumer key and the chainId
     const contract = Sumer.createWrappedContract(
       CONTRACT_ADDR,
       Token.abi,
