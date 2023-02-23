@@ -12,6 +12,7 @@ const injected = new InjectedConnector({
   supportedChainIds: [5], // support only goerli
 });
 
+
 // The address of our deployed contract
 const CONTRACT_ADDR = "0xC43982FE52EE6f25e982e3EE0772fa049428D0a6";
 

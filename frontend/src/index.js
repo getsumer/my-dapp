@@ -12,7 +12,9 @@ const dappKey = '019ac0ff-6638-4d3d-9c69-908cb7d834b7'
 
 //configure web3-react
 const getLibrary = (provider) => {
+
     const library = Sumer.init({ provider, dappKey })
+    
     return library
 };
 
